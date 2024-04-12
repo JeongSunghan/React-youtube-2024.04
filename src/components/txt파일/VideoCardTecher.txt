@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
-import { formatAgo } from "../util/data";
+import { formatAgo } from "../util/date";
 
 export default function VideoCard({ video }) {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export default function VideoCard({ video }) {
   const videoId = typeof(video.id) === 'string' ? video.id : video.id.videoId;
   return (
     <Card 
-      onClick={() => { navigate(`/videos/watch/${videoId}`, {state: {video} }) }}
+      onClick={() => { navigate(`/videos/watch/${videoId}`) }}
     >
       <CardContent>
         <img src={thumbnails.medium.url} alt={title} />

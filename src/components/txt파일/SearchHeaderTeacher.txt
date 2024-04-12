@@ -31,7 +31,7 @@ export default function SearchHeader() {
             <Link to='/' style={{textDecoration: 'none'}}>
               <Stack direction={'row'} spacing={1}>
                 <YouTubeIcon color='error' fontSize="large" />
-                <Typography variant="h4" color='error' sx={{fontWeight: 'bold', color:'black'}}>YouTube</Typography>
+                <Typography variant="h4" color='error' sx={{fontWeight: 'bold'}}>Youtube</Typography>
               </Stack>
             </Link>
           </Grid>
