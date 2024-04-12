@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import Grid from '@mui/material/Grid';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import VideoCard from "../components/VideoCard";
+import { useVideo} from '../api/youtube';
 
 // 유튜브 API 요청을 보내는 주소
 const keywordUri = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_YOUTUBE_API_KEY}&maxResults=25&part=snippet&q=`;
@@ -14,36 +16,25 @@ export default function Videos() {
 
   // url 검색 키워드 가져오는 함수
   const { keyword } = useParams();
-
-  // 비동기 데이터를 가져오고 캐싱하는데 사용(?), 로딩 상태, 에러, 데이터를 관리
-  const { isLoading, error, data: videos } = useQuery({
-
-    queryKey: ['videos', keyword],
-
-    // 함수 내에서 검색키워드가 있으면 => keywordUri를 사용, 없으면 popularUri를 사용하고 요청
-    queryFn: async () => {
-      const uri = keyword ? keywordUri + keyword : popularUri;
-
-      //  HTTP GET 요청을 보내고, 응답에서 비디오 목록(res.data.items)을 가져옴
-      return axios.get(uri).then(res => res.data.items);
-
-    },
-    staleTime: 1000 * 60 * 1,       // 1분, ms 단위로 지정할 수 있음
-
-  });
+  const {isLoading, error, videos} = useVideo(keyword);
 
   return (
-    <>      
+    <>
       {/* 로딩이 true면 로딩문구 표시, error가 존재하면 error문구 표시 */}
       {isLoading && <p><HourglassTopIcon /> Loading...</p>}
-      {error && <p><WarningAmberIcon /> Something is wrong!!!</p>}
 
       {/* videos가 있으면 VideoCard 컴포넌트를 사용 => 비디오 목록을 렌더링
           각 비디오 아이템은 video prop으로 VideoCard 컴포넌트에 전달 */}
+      {error && <p><WarningAmberIcon /> Something is wrong!!!</p>}
+
       {videos && (
-        <ul>
-          {videos.map(video => <VideoCard video={video} />)}
-        </ul>
+        <Grid container spacing={1}>
+          {videos.map(video => (
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <VideoCard video={video} />
+            </Grid>
+          ))}
+        </Grid>
       )}
     </>
   )
