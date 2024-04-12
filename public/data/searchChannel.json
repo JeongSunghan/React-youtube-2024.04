@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "-vQNO-DqL8t3xnQmu_dWyJQKNzM",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+      "totalResults": 1000000,
+      "resultsPerPage": 25
+  },
+  "items": [
+      {
+          "kind": "youtube#searchResult",
+          "etag": "ObJx8coyvzASiwGKfteSpov5OpE",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "0mWUwxtB5V0"
+          },
+          "snippet": {
+              "publishedAt": "2021-09-20T15:09:44Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Far Cry 6: Giancarlo Deconstructs Guerrilla Weapons",
+              "description": "One dictator's trash is another Guerrilla's treasure. Giancarlo Esposito breaks down what crafty items the Guerrilla rebels use to ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/0mWUwxtB5V0/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/0mWUwxtB5V0/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/0mWUwxtB5V0/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-09-20T15:09:44Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "rIKKWvnxfdmWznPkwELfJNfVSGo",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "cce6Wn2SQo0"
+          },
+          "snippet": {
+              "publishedAt": "2022-12-01T17:00:31Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Rainbow Six Siege: Solis Goes Undercover",
+              "description": "Nighthaven is up to something…Solis is infiltrating their base with one goal: stopping this squad's ongoing operations before it's ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/cce6Wn2SQo0/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/cce6Wn2SQo0/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/cce6Wn2SQo0/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-12-01T17:00:31Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "pDeybe_vTvinU2tRNnu7Q-rBY5c",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "kyANg9hwQ_s"
+          },
+          "snippet": {
+              "publishedAt": "2020-10-30T14:00:10Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "ASSASSIN’S CREED VALHALLA  - CINEMATIC TV COMMERCIAL",
+              "description": "Ninth century AD. Driven from Norway by endless wars and dwindling resources, a Viking raider, Eivor, leads a clan of Norsemen ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/kyANg9hwQ_s/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/kyANg9hwQ_s/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/kyANg9hwQ_s/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-10-30T14:00:10Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "FZCkkW6ua1dXH2pb-r38Nr0tjrQ",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "y1I4Sa1SU1U"
+          },
+          "snippet": {
+              "publishedAt": "2024-04-01T14:26:37Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "For Honor: Switcheroo Trailer | April Fools",
+              "description": "Valkyries wielding hefty warhammers, Conquerors brandishing graceful katanas, or Raiders swinging dainty parasols. Yes, you ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/y1I4Sa1SU1U/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/y1I4Sa1SU1U/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/y1I4Sa1SU1U/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2024-04-01T14:26:37Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "YY3rywM0YmTQ-Jw7cYSxuNSCP_k",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "82R3FH-n7-Y"
+          },
+          "snippet": {
+              "publishedAt": "2021-09-20T14:00:04Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Far Cry 6: Giancarlo Will Face You Now",
+              "description": "Do you have what it takes to challenge dictator Antón Castillo, played by Hollywood's favourite villain, Giancarlo Esposito?",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/82R3FH-n7-Y/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/82R3FH-n7-Y/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/82R3FH-n7-Y/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-09-20T14:00:04Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "ta8bPpZXrp_BAKPREsEe4KCvEKM",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "BtUq-XSv3w0"
+          },
+          "snippet": {
+              "publishedAt": "2021-06-12T19:52:15Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Far Cry 6: Season Pass Trailer | Become The Villain | #UbiForward",
+              "description": "Embrace the Far Cry legacy and play as the villains with the FAR CRY® 6 Season Pass. For the first time in Far Cry history, you ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/BtUq-XSv3w0/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/BtUq-XSv3w0/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/BtUq-XSv3w0/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-06-12T19:52:15Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "XFOswT9VZGCVaS5ZBUZeTFuXP4g",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "oS5VoO5e4f8"
+          },
+          "snippet": {
+              "publishedAt": "2016-09-05T08:00:01Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "For Honor  - Warden Trailer",
+              "description": "Sign up for Closed Alpha Date : From 15/09/16 3pm (CEST) to 18/09/16 2am (CEST) : [http://ubi.li/nq7q4] The Wardens are ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/oS5VoO5e4f8/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/oS5VoO5e4f8/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/oS5VoO5e4f8/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2016-09-05T08:00:01Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "PRsx60r1okroWtaVSw49PVlrJuE",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "6Ww_IFU6kg4"
+          },
+          "snippet": {
+              "publishedAt": "2009-06-02T14:08:03Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Splinter Cell Conviction - E3 trailer",
+              "description": "When someone strikes the ones you love, you will take any steps necessary.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/6Ww_IFU6kg4/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/6Ww_IFU6kg4/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/6Ww_IFU6kg4/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2009-06-02T14:08:03Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "I6OAYlVPG58_DJyV7lwKvrUkM8g",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "ovzdCNUZarw"
+          },
+          "snippet": {
+              "publishedAt": "2021-09-28T16:00:33Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Far Cry 6: Chicharrón Run - Cinematic TV Commercial",
+              "description": "In the streets of Yara, guerrilla fighters will seize any opportunity to oppose the regime… even when this opportunity happens to ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/ovzdCNUZarw/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/ovzdCNUZarw/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/ovzdCNUZarw/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-09-28T16:00:33Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "1qi9nQdL1Mu-vUUStn3fe3G0q50",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "wYGoFH6bWXg"
+          },
+          "snippet": {
+              "publishedAt": "2012-06-04T23:03:48Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Splinter Cell Blacklist | World Premiere Trailer [NORTH AMERICA]",
+              "description": "The United States has a military presence in two thirds of countries around the world. A group of 12 have had enough and initiate ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/wYGoFH6bWXg/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/wYGoFH6bWXg/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/wYGoFH6bWXg/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2012-06-04T23:03:48Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "hrhM_8S2pz_WPlOx7jDE4zlJRtQ",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "MP8q5F6dFqQ"
+          },
+          "snippet": {
+              "publishedAt": "2014-06-09T23:00:01Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Valiant Hearts E3 Trailer [US]",
+              "description": "World War I. The years between 1914 and 1918 were some of the most devastating to the history of mankind, and through the ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/MP8q5F6dFqQ/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/MP8q5F6dFqQ/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/MP8q5F6dFqQ/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2014-06-09T23:00:01Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "vG8QfQ4JvipGIDPOAjRVu9xgOBI",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "g_Zbfr6GXvE"
+          },
+          "snippet": {
+              "publishedAt": "2022-09-06T17:00:16Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Assassin&#39;s Creed 15th Anniversary: Leap into History",
+              "description": "Welcome to the greatest playground: History! Join us as we celebrate our 15th anniversary and unveil the future of the franchise ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/g_Zbfr6GXvE/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/g_Zbfr6GXvE/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/g_Zbfr6GXvE/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-09-06T17:00:16Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "RSzZbQKEGfkk5JCWM590kT9hP-s",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "xzCEdSKMkdU"
+          },
+          "snippet": {
+              "publishedAt": "2014-06-09T23:01:35Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Assassin&#39;s Creed Unity E3 2014 World Premiere Cinematic Trailer [EUROPE]",
+              "description": "The French Revolution was led by the people. They stood together and faught the oppression. This year, and for the 1st time in the ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/xzCEdSKMkdU/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/xzCEdSKMkdU/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/xzCEdSKMkdU/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2014-06-09T23:01:35Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "htPKAUUpUbOvABPANYk3uhLprno",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "EJZlPKD3E-4"
+          },
+          "snippet": {
+              "publishedAt": "2022-03-10T17:00:14Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Assassin’s Creed Valhalla: Dawn of Ragnarök - Launch trailer",
+              "description": "The most ambitious expansion in franchise history is AVAILABLE NOW! https://assassinscreed.com/buy Embrace your destiny as ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/EJZlPKD3E-4/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/EJZlPKD3E-4/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/EJZlPKD3E-4/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-03-10T17:00:14Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "aFfcaCFP-cETQzeBaulNfoiPg6g",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "FB5h_3yHtu8"
+          },
+          "snippet": {
+              "publishedAt": "2022-09-01T16:00:09Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Rainbow Six Siege: Spec Ops Grim on the Hunt",
+              "description": "Nighthaven's new recruit, Grim, is ready to fight anyone who stands in his way, Nøkk included.. About Rainbow Six Siege: ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/FB5h_3yHtu8/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/FB5h_3yHtu8/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/FB5h_3yHtu8/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-09-01T16:00:09Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "l6B9xQDmzepODS0RwZQS9Mh3KTE",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "fwadtvnWBu4"
+          },
+          "snippet": {
+              "publishedAt": "2022-11-13T17:00:22Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Rainbow Six Siege: Ghosteyes Squad Teaser",
+              "description": "The most insidious enemies have to be met in the darkness where they hide.” - Caveira. People and information are two of the ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/fwadtvnWBu4/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/fwadtvnWBu4/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/fwadtvnWBu4/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-11-13T17:00:22Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "_bR9jXYKz7xzA5ggeJhq2j8DzlM",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "rKjUAWlbTJk"
+          },
+          "snippet": {
+              "publishedAt": "2020-04-30T14:45:11Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Assassin’s Creed Valhalla: Cinematic World Premiere Trailer",
+              "description": "Watch the world premiere of Assassin's Creed Valhalla. Wars will rage. Kingdoms will fall. This is the age of the Vikings.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/rKjUAWlbTJk/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/rKjUAWlbTJk/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/rKjUAWlbTJk/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-04-30T14:45:11Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "fMt_aD1Z6H1IelHAbk3RlUXgZk0",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "-pUhraVG7Ow"
+          },
+          "snippet": {
+              "publishedAt": "2012-06-04T22:52:01Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Assassin&#39;s Creed 3  - E3 Official Trailer [UK]",
+              "description": "More content on http://www.assassinscreed.com You are Connor, warrior son of a Native American mother and British father.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/-pUhraVG7Ow/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/-pUhraVG7Ow/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/-pUhraVG7Ow/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2012-06-04T22:52:01Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "G-8IwdmnQXV2s4ZuuIaV4zaAhEs",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "DCZ2l1BbWyY"
+          },
+          "snippet": {
+              "publishedAt": "2012-03-05T17:00:58Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Assassin&#39;s Creed 3 - Reveal Trailer [UK]",
+              "description": "More content on www.assassinscreed.com 18th Century North America. After more than 20 years of conflict, the 13 American ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/DCZ2l1BbWyY/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/DCZ2l1BbWyY/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/DCZ2l1BbWyY/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2012-03-05T17:00:58Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "GiMIvFiTxM_GtuflzaEEGSROKHw",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "YctHVffkogc"
+          },
+          "snippet": {
+              "publishedAt": "2021-10-26T16:00:16Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Trailer Operation Motherland | Ghost Recon Breakpoint",
+              "description": "Play Operation Motherland, the brand new mode in Ghost Recon Breakpoint. Out 2nd November. Find out more about the new ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/YctHVffkogc/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/YctHVffkogc/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/YctHVffkogc/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-10-26T16:00:16Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "H9kY92AGcnVFCZVcQbs13Q-FFIM",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "cbMM0LdIrU4"
+          },
+          "snippet": {
+              "publishedAt": "2013-06-11T02:04:34Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Художественный трейлер с E3 -Assassin&#39;s Creed 4. Черный флаг [RU]",
+              "description": "Больше эксклюзивной информации на официальном сайте http://www.assassinscreed.com Присоединяйтесь к ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/cbMM0LdIrU4/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/cbMM0LdIrU4/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/cbMM0LdIrU4/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2013-06-11T02:04:34Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "V51f626LQw6f-FwepT0aA6-0RT8",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "ug5lI1VjiRg"
+          },
+          "snippet": {
+              "publishedAt": "2020-11-30T17:00:15Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Tom Clancy’s Rainbow Six Siege – Operation Neon Dawn - SEE YOU ON THE FIELD",
+              "description": "You can find comfort or hardship in the light.. Keep that in mind, now that Operator Aruni is joining Team Rainbow! More info: ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/ug5lI1VjiRg/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/ug5lI1VjiRg/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/ug5lI1VjiRg/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-11-30T17:00:15Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "g3mGCBPuJ8cbN8s_6wTSvFosDc0",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "a8JfRqi2Y7A"
+          },
+          "snippet": {
+              "publishedAt": "2021-12-13T17:04:02Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Assassin’s Creed Crossover Stories - Announcement Trailer",
+              "description": "With Assassin's Creed Crossover Stories, discover the first-ever crossover between two Assassin's Creed games. Dive deeper ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/a8JfRqi2Y7A/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/a8JfRqi2Y7A/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/a8JfRqi2Y7A/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-12-13T17:04:02Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "Vk6LfBiLtx81CuKcJzUihWPOjII",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "RDzw1EKnaIA"
+          },
+          "snippet": {
+              "publishedAt": "2023-06-12T17:03:23Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Avatar: Frontiers of Pandora – Official World Premiere Trailer | Ubisoft Forward",
+              "description": "Watch the World Premiere trailer of Avatar: Frontiers of Pandora. Set in the never-before-seen Western Frontier of Pandora, you ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/RDzw1EKnaIA/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/RDzw1EKnaIA/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/RDzw1EKnaIA/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2023-06-12T17:03:23Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "sXrag40llIr-2ZGMGmN2cSoYW1Q",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "n3mmX0J05vc"
+          },
+          "snippet": {
+              "publishedAt": "2022-06-01T16:00:27Z",
+              "channelId": "UC0KU8F9jJqSLS11LRXvFWmg",
+              "title": "Rainbow Six Siege: Calling Sens to the Rescue",
+              "description": "Let's dance.\" Discover how Wolfguard operates on the field. Watch as they find out how Nighthaven is involved in a hostage ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/n3mmX0J05vc/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/n3mmX0J05vc/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/n3mmX0J05vc/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Ubisoft",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-06-01T16:00:27Z"
+          }
+      }
+  ]
+}

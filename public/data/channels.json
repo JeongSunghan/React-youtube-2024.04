@@ -1,0 +1,43 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "x_Pw_u6xKbOjQw-1ayphoB59RtI",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "3laQ82cm_G1eHCgjStFjz8QHJ3Q",
+      "id": "UCx-KWLTKlB83hDI6UKECtJQ",
+      "snippet": {
+        "title": "Max",
+        "description": "The one to watch for every you. #streamonmax ",
+        "customUrl": "@streamonmax",
+        "publishedAt": "2019-07-03T14:47:23Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/VNaqKQFMoMXPgqUfe12hvzG882lrDbElLT5yWH83h8ZvEyn1rJN8DkA4kaZdU36YbO79XniwOwY=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/VNaqKQFMoMXPgqUfe12hvzG882lrDbElLT5yWH83h8ZvEyn1rJN8DkA4kaZdU36YbO79XniwOwY=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/VNaqKQFMoMXPgqUfe12hvzG882lrDbElLT5yWH83h8ZvEyn1rJN8DkA4kaZdU36YbO79XniwOwY=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Max",
+          "description": "The one to watch for every you. #streamonmax "
+        },
+        "country": "US"
+      }
+    }
+  ]
+}
