@@ -20,9 +20,9 @@ export default function SignIn() {
         navigate(-1);       // 이전 페이지로 돌아옴
     }
 
-    //깃허브 폼 이벤트 처리
+    //깃 허브 폼 이벤트 처리
     const handleGithub = e => {
-        //깃허브로그인 함수 호출 후 로그인과 동일
+        //깃 허브로그인 함수 호출 후 로그인과 동일
         loginWithGithub();
         navigate(-1);
     }

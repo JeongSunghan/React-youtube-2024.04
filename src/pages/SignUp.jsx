@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { register, loginWithGithub, logout, login } from '../api/firebase';
 import { uploadImage } from "../api/cloudinary";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function SignUp() {
 
@@ -38,8 +38,8 @@ export default function SignUp() {
   const handleUpload = e => {
     //선택된 파일을 file 상태에 저장
     setFile(e.target.files && e.target.files[0]);
-    // 이미지를 클라우드다이너리에 업로드 후 반한된 url을 userInfo의 사진url로 서렂ㅇ
-    uploadImage(file)
+    // 이미지를 클라우드다이너리에 업로드 후 반한된 url을 userInfo의 사진url로 설정
+    uploadImage(e.target.files[0])
       .then(url => setUserInfo({ ...userInfo, ['photo']: url }));
   }
 
@@ -59,9 +59,9 @@ export default function SignUp() {
         <input type="password" name='password' value={userInfo.password} placeholder="패스워드"
           onChange={handleChange} /><br />
 
-        <input type="text" name='name' value={userInfo.name} placeholder="이름"
+        <input type="text" name='name' value={userInfo.name} placeholder="이름" required
           onChange={handleChange} /><br />
-          
+
         <input type="file" accept="image/*" name='file' onChange={handleUpload} /><br />
         <button onClick={handleSubmit}>사용자 등록</button>
         <button onClick={handleLogin}>로그인</button>
@@ -70,6 +70,8 @@ export default function SignUp() {
       <span>계정이 있으신가요?</span>
       <Link to='/signIn'>로그인</Link><br /><br />
       <button onClick={handleGithub}>깃허브 로그인</button>
+      <br /><br />
+      {file && (<img src={URL.createObjectURL(file)} alt="photo" />)}
 
     </div>
   )
