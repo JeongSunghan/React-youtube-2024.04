@@ -6,6 +6,9 @@ import Videos from './pages/Videos';
 import VideoDetail from './pages/VideoDetail';
 import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
+import SignUp from './pages/SignUp';
+import ProtectedRoute from './pages/ProtectedRoute';
+import ViewRecord from './pages/ViewRecord'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,9 @@ const router = createBrowserRouter([
       { path: 'videos', element: <Videos /> },
       { path: 'videos/:keyword', element: <Videos /> },
       { path: 'videos/watch/:videoId', element: <VideoDetail /> },
+      { path: 'signUp', element: <SignUp /> },
+      { path: 'videos/record',
+        element: <ProtectedRoute><ViewRecord /></ProtectedRoute>}
     ]
   }
 ]);
