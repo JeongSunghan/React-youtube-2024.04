@@ -27,5 +27,6 @@ export function AuthContextProvider({ children }) {
 
 export function useAuthContext() {
   // 이 훅을 사용하는 컴포넌트는 user 객체와 logout 함수를 쉽게 얻어와서 사용
-  return useContext(AuthContext);
+  const auth = useContext(AuthContext);
+  return auth;
 }

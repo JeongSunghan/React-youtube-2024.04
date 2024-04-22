@@ -1,50 +1,40 @@
-import { initializeApp } from "firebase/app";     //Firebase 애플리케이션을 초기화
-
-
-import { getAuth, createUserWithEmailAndPassword, GithubAuthProvider,
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword, GithubAuthProvider, GoogleAuthProvider,
   signInWithPopup, signOut, updateProfile, signInWithEmailAndPassword,
-  onAuthStateChanged } from "firebase/auth";
+  onAuthStateChanged, signInWithRedirect } from "firebase/auth";
+import { getDatabase, ref, get, set } from "firebase/database";
+import { v4 as uuid } from 'uuid';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
 };
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const database = getDatabase(app);
 
-
-const auth = getAuth();     //인증 객체를 생성
-
-
-//사용자 등록 함수
-export function register({ email, password, name, photo }) {  
+export function register({ email, password, name, photo }) {
   console.log('firebase:register():', email, password);
-
-  // 이메일, 비밀번호를 사용하여 사용자 계성 생성
   createUserWithEmailAndPassword(auth, email, password)
-
-  // 계정 생성 후 사용자의 프로필을 업데이트(이름, 사진url 추가)
     .then(() => {
       updateProfile(auth.currentUser, {
         displayName: name, photoURL: photo
       })
     })
-    // 프로필 업데이트 후 로그아웃
     .then(() => {logout()})
     .catch(console.error);
 }
 
-
-//이메일로 로그인 함수
-export function login({ email, password}) {
+export function login({ email, password }) {
   // 주어진 이메일과 비밀번호로 사용자를 로그인
+  console.log('firebase.js:login(): ', email, password);
   signInWithEmailAndPassword(auth, email, password)
     .catch(console.error);
 }
 
-
-//깃허브로 로그인 함수
 export function loginWithGithub() {
   // GitHub 제공자를 사용하여 팝업을 통해 사용자를 로그인
   const provider = new GithubAuthProvider();
@@ -52,16 +42,132 @@ export function loginWithGithub() {
     .catch(console.error);
 }
 
-//로그아웃 함수
+export function loginWithGoogle() {
+  const provider = new GoogleAuthProvider();
+  signInWithRedirect(auth, provider)
+  // signInWithPopup(auth, provider)
+    .catch(console.error);
+}
+
 export function logout() {
   signOut(auth).catch(console.error);
 }
 
 //사용자 상태 변경 감지 함수
 export function onUserStateChanged(callback) {
-  //사용자의 로그인 상태 변화를 감지
-  onAuthStateChanged(auth, (user) => {
+   //사용자의 로그인 상태 변화를 감지
+  onAuthStateChanged(auth, async (user) => {
     // 상태가 변경될 때마다 제공된 콜백 함수를 호출하여 해당 사용자 객체를 전달
-    callback(user);
+    const updatedUser = user ? await adminUser(user) : null;
+    callback(updatedUser);
   });
+}
+
+async function adminUser(user) {
+  return get(ref(database, 'admins'))
+    .then(snapshot => {
+      if (snapshot.exists()) {
+        const admins = snapshot.val();
+        // console.log(admins);
+        const isAdmin = admins.includes(user.uid);
+        return {...user, isAdmin};
+      }
+      return user;
+    });
+}
+
+export async function addWatchVideoRecord({ user, video }) {
+  const id = uuid();
+  return set(ref(database, `videoRecords/${id}`), {
+    id, userId:user.uid, userName:user.displayName,
+    videoId:video.id, title:video.snippet.title, channel:video.snippet.channelTitle,
+    thumbnailUrl: video.snippet.thumbnails.medium.url, 
+    watchAt: new Date().toISOString()
+  });
+}
+
+export async function getWatchVideoRecord() {
+  return get(ref(database, 'videoRecords'))
+    .then(snapshot => {
+      if (snapshot.exists()) {
+        const objects = snapshot.val();
+        let records = Object.values(objects);   // object를 array로 변환
+        records = records.sort((a, b) => b.watchAt.localeCompare(a.watchAt));   // 내림차순 정렬
+        const newRecords = records.filter((record, idx) => {    // 중복 제거
+          return (
+            records.findIndex(eachRecord => {
+              return (record.videoId === eachRecord.videoId && record.userId === eachRecord.userId)
+            }) === idx
+          ) 
+        });
+        const result = Object.groupBy(newRecords, ({ userName }) => userName);    // Grouping
+        return result;
+      }
+      return null;
+    });  
+}
+
+/*
+export async function getWatchVideoRecord(userId) {
+  return get(ref(database, 'videoRecords'))
+    .then(snapshot => {
+      if (snapshot.exists()) {
+        const objects = snapshot.val();
+        let records = Object.values(objects);   // object를 array로 변환
+        records = records.filter(record => record.userId === userId);   // userId 필터링
+        records = records.sort((a, b) => b.watchAt.localeCompare(a.watchAt));   // 내림차순 정렬
+        const newRecords = records.filter((record, idx) => {    // 중복 제거
+          return (
+            records.findIndex(eachRecord => {
+              return record.videoId === eachRecord.videoId
+            }) === idx
+          ) 
+        });
+        return newRecords;
+      }
+      return null;
+    });
+}
+
+export async function getTotalWatchVideoRecordByUser() {
+  return get(ref(database, 'videoRecords'))
+    .then(snapshot => {
+      if (snapshot.exists()) {
+        const objects = snapshot.val();
+        let records = Object.values(objects);   // object를 array로 변환
+        records = records.sort((a, b) => b.watchAt.localeCompare(a.watchAt));   // 내림차순 정렬
+        const newRecords = records.filter((record, idx) => {    // 중복 제거
+          return (
+            records.findIndex(eachRecord => {
+              return (record.videoId === eachRecord.videoId && record.userId === eachRecord.userId)
+            }) === idx
+          ) 
+        });
+        const result = Object.groupBy(newRecords, ({ userName }) => userName);    // Grouping
+        return result;
+      }
+      return null;
+    });
+}
+*/
+
+export async function getWatchVideoCount(userId) {
+  return get(ref(database, 'videoRecords'))
+    .then(snapshot => {
+      if (snapshot.exists()) {
+        const objects = snapshot.val();
+        const records = Object.values(objects)
+          .filter(record => record.userId === userId);   // userId 필터링
+        const newRecords = records.filter((record, idx) => {    // 중복 제거
+          return (
+            records.findIndex(eachRecord => {
+              return record.videoId === eachRecord.videoId
+            }) === idx
+          ) 
+        });
+        // console.log(newRecords.length);
+        return newRecords.length;
+      }
+      return 0;
+    });  
 }

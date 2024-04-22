@@ -13,8 +13,8 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <AuthContextProvider>
-      <SearchHeader />
       <QueryClientProvider client={queryClient}>
+        <SearchHeader />
         <Outlet />
       </QueryClientProvider>
     </AuthContextProvider>

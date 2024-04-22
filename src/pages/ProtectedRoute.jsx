@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuthContext } from "../context/AuthContext";
 
-export default function ProtectedRoute({ children }) {
+export default function ProtectedRoute({ children, requireAdmin }) {
   const { user } = useAuthContext();
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    if (user)
+      setIsLoading(false);
+  }, [user]);
 
-  //유저가 존재하지않으면 홈으로 보냄
-  if (!user)
-    return <Navigate to='/' replace={true} />
+  if (isLoading)
+    return null;
+
+  if (!user) {
+    alert('먼저 로그인을 해 주세요.');
+    return (
+        <Navigate to='/' replace={true} />
+    );
+  }
+
+  if (requireAdmin && !user.isAdmin) {
+    alert('관리자만 사용 가능한 메뉴입니다.');
+    return (
+        <Navigate to='/' replace={true} />
+    );
+  }
 
   return children;
 }
